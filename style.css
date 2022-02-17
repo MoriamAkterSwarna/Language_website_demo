@@ -1,0 +1,252 @@
+
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.container{
+    align-items: center;
+    display: flex;
+    height: 65vh ;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Hero section start */
+#hero
+{
+    background-image: url(/images/hero-bg.png);
+    background-size: cover;
+    background-position: left center ;
+    position:relative;
+    z-index: 1;
+}
+#hero::after
+{
+    background-color: black;
+    content: '';
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+#hero .hero{
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 1200px;
+    justify-content: flex-start;
+}
+#hero h1
+{
+    font-size: 4rem;
+    color:transparent;
+    display: block;
+    position: relative;
+    width: fit-content;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+#hero h1:nth-child(1){
+    animation-delay: 1s;
+}
+#hero h1:nth-child(2){
+    animation-delay: 2s;
+}
+#hero h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3s;
+}
+#hero h1 span
+{
+    height: 100%;
+    width:0;
+    top: 0;
+    left: 0;
+    background-color: crimson;
+    position:absolute;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+}
+#hero h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+#hero h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+#hero h1:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+#hero .cta{
+    margin-top: 30px;
+    padding: 10px 30px;
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    border: 2px solid crimson;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    transition: .3s ease ;
+    transition-property: background-color, color;
+
+}
+#hero .cta:hover
+{
+    background-color: crimson;
+    color: white;
+}
+/* Hero section end */
+
+/* key frames start */
+@keyframes text_reveal_box{
+    50%{
+        left: 0;
+        width: 100%;
+    }
+    100%{
+        left: 100%;
+        width: 0;
+    }
+}
+
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: crimson;
+        font-weight: 500;
+
+    }
+}
+/* key frames end */
+.nav_menu{
+    float: left;
+
+}
+.nav_menu ul{
+    margin: 0;
+    padding: 0;
+    background: #42A5F5;
+    color: black;
+    overflow: hidden;
+    display: inline-block;
+    width: 300px;
+    
+  }
+  .nav_menu ul li{
+    float: left;
+    list-style-type: none;
+    
+  }
+  .nav_menu ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    
+    width: 300px;
+    height: 70px;
+    font-size: large;
+    
+    float: left;
+
+  }
+  .nav_menu ul li a:hover{
+      background-color: blanchedalmond;
+    color: brown;
+    text-decoration: underline;
+    
+  }
+
+      
+  .home{
+    
+    float: left;
+    margin: auto;
+    background-color: #C8D0CF;
+    box-sizing: border-box;
+    width: 1218px;
+  }
+  .home h1{
+      float: left;
+  }
+  .clear{
+      clear: both;
+  }
+  .home_py{
+      margin: auto;
+      padding-top: 15px;
+      float: left;
+      width: 100%;
+      
+  }
+  .home ol{
+        padding-left: 50px;
+  }
+  .home ul{
+      padding-left: 65px;
+  }
+  
+  .introduction{
+      padding: 20px;
+      background-color: rgb(50, 148, 148);
+      
+  }
+  .introduction ul li{
+      list-style: circle;
+      margin-left: 30px;
+      margin-top: 10px;
+  }
+  .introduction h2{
+      padding-bottom: 15px;
+      padding-top: 10px;
+  }
+  .data-type{
+    padding: 20px;
+    background-color: rgb(50, 148, 148);
+      
+}
+.data-type h2 h3{
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+.if-else{
+    padding: 20px;
+    background-color: rgb(50, 148, 148);
+      
+}
+.if-else h3{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+}
+.if-else h1{
+    padding-bottom: 15px;
+}
+.loop{
+    padding: 20px;
+    background-color: rgb(50, 148, 148);
+      
+}
+.loop h1 h2 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+}
+
+  

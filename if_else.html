@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contional Statement</title>
+
+</head>
+<body>
+    <div class="if-else">
+        <h1>Python if else</h1>
+        <pre>
+            There comes situations in real life when we need to make some decisions and based on these decisions, we decide what should we do next. Similar situations arise in programming also where we need to 
+            make some decisions and based on these decisions we will execute the next block of code. Decision-making statements in programming languages decide the direction of the flow of program execution. 
+
+            In Python, if else elif statement is used for decision making.</pre>
+            <h3>if statement</h3>
+            <pre>
+                if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain 
+                condition is true then a block of statement is executed otherwise not.
+
+                Syntax: 
+
+                    if condition:
+                    # Statements to execute if
+                    # condition is true
+                Here, the condition after evaluation will be either true or false. if statement accepts boolean values – if the value is true then it will execute the block of statements below it otherwise not. 
+                We can use condition with bracket ‘(‘ ‘)’ also. 
+                As we know, python uses indentation to identify a block. So the block under an if statement will be identified as shown in the below example:  
+
+                if condition:
+                    statement1
+                statement2
+
+                # Here if the condition is true, if block 
+                # will consider only statement1 to be inside 
+                # its block.
+            </pre>
+            <h3>if-else statement</h3>
+            <pre>
+                The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. But what if we want to do something else if the condition is false. 
+                Here comes the else statement. We can use the else statement with if statement to execute a block of code when the condition is false. 
+
+                Syntax: 
+
+                    if (condition):
+                        # Executes this block if
+                        # condition is true
+                    else:
+                        # Executes this block if
+                        # condition is false
+            </pre>
+            <h3>nested-if statement</h3>
+            <pre>
+                A nested if is an if statement that is the target of another if statement. Nested if statements mean an if statement inside another if statement. Yes, Python allows us to nest if statements 
+                within if statements. i.e, we can place an if statement inside another if statement.
+
+                Syntax: 
+
+                    if (condition1):
+                        # Executes when condition1 is true
+                        if (condition2): 
+                            # Executes when condition2 is true
+                        # if Block is end here
+                    # if Block is end here
+            </pre>
+            <h3>if-elif-else ladder</h3>
+            <pre>
+                Here, a user can decide among multiple options. The if statements are executed from the top down. As soon as one of the conditions controlling the if is true, the statement associated with 
+                that if is executed, and the rest of the ladder is bypassed. If none of the conditions is true, then the final else statement will be executed.
+
+                Syntax: 
+
+                    if (condition):
+                        statement
+                    elif (condition):
+                        statement
+                    .
+                    .
+                    else:
+                        statement
+            </pre>
+    </div>
+</body>
+</html>
